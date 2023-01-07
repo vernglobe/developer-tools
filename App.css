@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#devmain {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  margin: 1rem 1rem 0 0;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  outline: none;
+  border: 1px solid #808080 !important;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: -3px !important;
+  right: 100px;
+}
+
+.btn:hover {
+  background-color: #e4e3e34d !important;
+}
+
+#page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 700px){
+  #page {
+    font-size: 2rem;
+    display: flex !important;
+  }
+
+  .btn {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .btn {
+    right: 3px;
+  }
+
+  .page__title {
+    display: flex;
+  }
+
+  #page {
+    display: block;
+    padding-left: 3rem;
+  }
+}
+
+.app__brand__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5a8dee;
+  margin-left: 0.5rem;
+}
+
+/* Sidebar toggle button starts */
+.outer__circle {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #5f97ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer__circle::after {
+  position: absolute;
+  top: 0.225rem;
+  left: 0.215rem;
+  content: "";
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.inner__circle {
+  position: relative;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #5f97ef;
+  z-index: 100;
+}
+
+.inner__circle::after {
+  position: absolute;
+  top: 0.125rem;
+  left: 0.15rem;
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+/* Sidebar toggle button ends */
+
+#children__wrapper {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#children__container {
+  width: 100%;
+  margin: 20px 20px 20px 0px;
+}
+
+.topbar__appbrandshow {
+  color: yellow; 
+}
