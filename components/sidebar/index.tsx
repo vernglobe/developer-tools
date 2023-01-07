@@ -20,7 +20,7 @@ const MAX_MOBILE_WIDTH = 468;
 const MOBILE_VIEW = window.innerWidth <= MAX_MOBILE_WIDTH;
 
 export default function Sidebar({ children }:any) {
-  const [displaySidebar, setDisplaySidebar] = useState(!MOBILE_VIEW);
+  const [displaySidebar, setDisplaySidebar] = useState(false);
 
   const handleSidebarDisplay = (e: any) => {
     e.preventDefault();
