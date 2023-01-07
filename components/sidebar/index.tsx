@@ -35,13 +35,13 @@ export default function Sidebar({ children }:any) {
     <React.Fragment>
       <SidebarContainer id="dev-sidebar" displaySidebar={displaySidebar}>
         <SidebarWrapper>
-          <SidebarLogoWrapper displaySidebar={displaySidebar}>
+        { /*<SidebarLogoWrapper displaySidebar={displaySidebar}>
             <SidebarToggler
               displaySidebar={displaySidebar}
               onClick={handleSidebarDisplay}>
               <SideMenuIcon fontSize="medium"/>
-            </SidebarToggler>
-          </SidebarLogoWrapper>
+  </SidebarToggler>
+          </SidebarLogoWrapper>*/}
           <SidebarItems displaySidebar={displaySidebar} />
         </SidebarWrapper>
       </SidebarContainer>

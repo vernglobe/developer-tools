@@ -74,7 +74,6 @@ export const ItemsList = styled.ul`
 
 export const ItemContainer = styled.li`
   margin-top: 0.5rem;
-  padding: 0.5rem 0.85rem !important;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
@@ -126,7 +125,7 @@ export const SidebarContainer = styled.div<{displaySidebar: boolean}>`
   width: ${({ displaySidebar }) => (displaySidebar ? "16rem" : "5rem")};
   min-width: 5rem;
   height: 100%;
-  padding: 0.75rem;
+  padding: 1.2rem 0.75rem 0.75rem 0.75rem;
   border-radius: 20px 0px 0px 20px;
   background: ${({ displaySidebar }) => (displaySidebar ? "#A4FF90" : "#A4FF90")}; 
   box-shadow: ${({ displaySidebar }) => (displaySidebar ? "20px 0px 30px #A1FA4F inset" : "")};
